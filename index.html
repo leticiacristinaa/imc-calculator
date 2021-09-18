@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICON -->
+    <link rel="shortcut icon" type="svg" href="img/weight-solid.svg">
+    <title>IMC - Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">    <!-- CONTAINER -->
+        <div class="box">  <!-- BOX -->
+            
+            <div>
+                <h1 class="title mb-4">Cálculo de IMC</h1>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <i class="input-group-text fas fa-text-height"></i>
+                </div>
+                
+                <input id="altura" class="form-control" type="number" placeholder="Altura (ex:1.75)">
+
+                <div class="input-group-append">
+                    <div class="input-group-text">m</div>
+                </div>
+            </div>
+    
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <i class="input-group-text fas fa-weight "></i>
+                </div>
+
+                <input id="peso" class="form-control" type="number" placeholder="Peso (ex: 60.00)">
+                
+                <div class="input-group-append">
+                    <div class="input-group-text">kg</div>
+                </div>
+            </div>
+            <!-- END INPUT -->
+
+            <!-- BUTTON -->
+            <div>
+                <button class="btn btn-custom" onclick="Calcular()">Calcular</button>
+                <button class="btn btn-custom" onclick="Apagar()">Apagar</button>
+                <a href="tabela.html" class="btn btn-tab">Tabela de Classificação</a>
+            </div>
+            <!-- END BUTTON -->
+
+            <!-- RESULT -->
+            <div class="resultado">
+                <h3 id="result"></h3>
+                <h3 id="value"></h3>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <span>Desenvolvido por: <a href="#">Letícia Cristina</a></span>
+            </div> <!-- END FOOTER -->
+        </div> <!-- END BOX -->
+    </div> <!-- END CONTAINER -->
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
